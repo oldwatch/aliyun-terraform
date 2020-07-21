@@ -8,17 +8,6 @@
 
 <tutorial-nav></tutorial-nav> 
 
-## 云账号安全加固
-
-建议您对自己的云账号进行安全设置，包括修改登录密码和开启多因素认证（Multi-factor authentication，MFA）。同时创建并授权用于管理操作的RAM用户，从而最大化减少云账号的使用。
-
-该操作需要在控制台中进行，详细步骤，您可以参考：
-
-- [云账号安全设置](https://help.aliyun.com/document_detail/170395.html)
-- [创建 admin 用户并加固安全设置](https://help.aliyun.com/document_detail/170396.html)
-
-完成后，您可以使用 admin 用户登录，完成接下来的步骤。
-
 ## RAM 配置
 
 您可以通过 Terraform 完成基本的用户组配置，方便后续RAM用户的简单授权。Cloud Shell 中内置了 Terraform 和您的身份信息，您可以直接使用。
@@ -80,6 +69,15 @@ terraform apply
 - 创建默认安全组
 
 您现在可以登录[专有网络（VPC）控制台](https://vpcnext.console.aliyun.com/)查看通过 Terraform 完成的网络配置。
+
+## 云账号安全加固（推荐）
+
+建议您对自己的云账号进行安全设置，包括修改登录密码和开启多因素认证（Multi-factor authentication，MFA）。同时创建并授权用于管理操作的RAM用户，从而最大化减少云账号的使用。
+
+该操作需要在控制台中进行，详细步骤，您可以参考：
+
+- [云账号安全设置](https://help.aliyun.com/document_detail/170395.html)
+- [创建 admin 用户并加固安全设置](https://help.aliyun.com/document_detail/170396.html)
 
 ## 总结
 
