@@ -1,4 +1,4 @@
-provider "alicloud" {
+provider "aliyun/alicloud" {
   profile = "default"
 }
 
