@@ -4,8 +4,8 @@ provider "alicloud" {
 
 # 为系统管理员创建自定义权限策略
 resource "alicloud_ram_policy" "system_admin_policy" {
-  name        = "SystemAdministratorAccess"
-  document    = <<EOF
+  policy_name        = "SystemAdministratorAccess"
+  policy_document    = <<EOF
   {
     "Statement": [
         {
